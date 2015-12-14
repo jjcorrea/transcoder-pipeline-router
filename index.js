@@ -2,7 +2,6 @@ var aws = require('aws-sdk');
 var elastictranscoder = new aws.ElasticTranscoder();
 
 exports.handler = function(event, context) {
-    console.log('Atualizado.');
     console.log('Received event:', JSON.stringify(event, null, 2));
     var files =  event.files;
     var counter = 0;

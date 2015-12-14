@@ -1,6 +1,7 @@
 {
   "name": "transcoder-pipeline-router",
   "version": "1.0.0",
+  "private": "true",
   "description": "Transcoding pipeline routing logic",
   "main": "pipeline_router.js",
   "dependencies": {

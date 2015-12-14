@@ -5,23 +5,19 @@ grunt.initConfig({
     lambda_invoke: {
         default: {
             options: {
-                file_name: 'testeLambda.js'
+                file_name: 'index.js'
             }
         }
     },
     lambda_deploy: {
         default: {
-            //function: 'pipeline_router',
-            function: 'testeLambda',
-            options: {
-                timeout : 10,
-                memory: 256
-            },
-            arn: 'arn:aws:lambda:us-east-1:052341555783:function:testeLambda'
+            arn: 'arn:aws:lambda:us-east-1:052341555783:function:testeLambda',
         }
     },
     lambda_package: {
         default: {
+            options: {
+            }
         }
     }
 });
