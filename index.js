@@ -10,7 +10,7 @@ exports.handler = function(event, context) {
             Input: {
                 Key: file['relative-path'],
             },
-            PipelineId: '1439822635276-rcaxp4',
+            PipelineId: '1450444750278-tw7e41',
             OutputKeyPrefix: 'test-29/test_',
             Outputs: [
                 {
@@ -53,7 +53,7 @@ exports.handler = function(event, context) {
                 {
                     Format: 'HLSv3',
                     Name: 'master',
-                    OutputKeys: ["hls_768x432", "hls_416x234", "hls_480x270", "hls_640x360", "hls_960x540", "hls_1280x720", "hls_1920x1080"],
+                    OutputKeys: ["hls_768x432_", "hls_416x234_", "hls_480x270_", "hls_640x360_", "hls_960x540_", "hls_1280x720_", "hls_1920x1080_"],
                 }
             ]
         };
