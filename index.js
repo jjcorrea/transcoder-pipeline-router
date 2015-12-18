@@ -14,37 +14,37 @@ exports.handler = function(event, context) {
             OutputKeyPrefix: 'test-29/test_',
             Outputs: [
                 {
-                    Key: 'hls_768x432',
+                    Key: 'hls_768x432_',
                     PresetId: '1443827522116-lzwvl1',
                     SegmentDuration: '10'
                 },
                 {
-                    Key: 'hls_416x234',
+                    Key: 'hls_416x234_',
                     PresetId: '1443827226269-j3hjhq',
                     SegmentDuration: '10'
                 },
                 {
-                    Key: 'hls_480x270',
+                    Key: 'hls_480x270_',
                     PresetId: '1443827374277-xgzzdw',
                     SegmentDuration: '10'
                 },
                 {
-                    Key: 'hls_640x360',
+                    Key: 'hls_640x360_',
                     PresetId: '1443827437245-ehtlmv',
                     SegmentDuration: '10'
                 },
                 {
-                    Key: 'hls_960x540',
+                    Key: 'hls_960x540_',
                     PresetId: '1443827588644-f4me52',
                     SegmentDuration: '10'
                 },
                 {
-                    Key: 'hls_1280x720',
+                    Key: 'hls_1280x720_',
                     PresetId: '1443827656419-079ewh',
                     SegmentDuration: '10'
                 },
                 {
-                    Key: 'hls_1920x1080',
+                    Key: 'hls_1920x1080_',
                     PresetId: '1443827724492-vvdyuf',
                     SegmentDuration: '10'
                 },
