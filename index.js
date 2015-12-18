@@ -5,13 +5,14 @@ exports.handler = function(event, context) {
     console.log('Received event:', JSON.stringify(event, null, 2));
     var files =  event.files;
     var counter = 0;
+
     files.forEach(function(file){
         var params = {
             Input: {
-                Key: file['relative-path'],
+                Key: file['relativePath'],
             },
-            PipelineId: '1450444750278-tw7e41',
-            OutputKeyPrefix: 'test-29/test_',
+            PipelineId: event.pipelineId || '1450444750278-tw7e41',
+            OutputKeyPrefix: 'core-media/hlsv3/' +  basename(file.relativePath) + "/",
             Outputs: [
                 {
                     Key: 'hls_768x432_',
@@ -71,6 +72,11 @@ exports.handler = function(event, context) {
         });
     });
 };
+
+// return basename without extension
+function basename(path) {
+    return path.split('/').reverse()[0].split('.')[0];
+}
 
 
 
