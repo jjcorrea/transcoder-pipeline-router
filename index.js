@@ -60,7 +60,7 @@ exports.handler = function(event, context) {
         elastictranscoder.createJob(params, function(err, data) {
             if (err){
                 console.log(err, err.stack);
-                ctx.fail(err);
+                context.fail(err);
                 return;
             }
             console.log("transcoding sent - data: " + JSON.stringify(data));
