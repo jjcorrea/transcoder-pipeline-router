@@ -9,7 +9,7 @@ grunt.initConfig({
     },
     lambda_deploy: {
         default: {
-            arn: 'arn:aws:lambda:us-east-1:052341555783:function:testeLambda',
+            arn: 'arn:aws:lambda:us-east-1:027396584751:function:transcodeDispatcher',
             options: {
                 credentialsJSON: 'credentials.JSON'
             }
