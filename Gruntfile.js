@@ -10,6 +10,9 @@ grunt.initConfig({
     lambda_deploy: {
         default: {
             arn: 'arn:aws:lambda:us-east-1:052341555783:function:testeLambda',
+            options: {
+                credentialsJSON: 'credentials.JSON'
+            }
         }
     },
     lambda_package: {
