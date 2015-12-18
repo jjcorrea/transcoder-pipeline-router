@@ -8,13 +8,52 @@ exports.handler = function(event, context) {
     files.forEach(function(file){
         var params = {
             Input: {
-                Key: file['input-name']
+                Key: file['input-name'],
             },
-            PipelineId: '1449840700236-g1wzfy',
+            PipelineId: '1439822635276-rcaxp4',
+            OutputKeyPrefix: 'test-29/test_',
             Outputs: [
                 {
-                    Key: file['output-name'],
-                    PresetId: '1351620000001-200055'
+                    Key: 'hls_768x432',
+                    PresetId: '1443827522116-lzwvl1',
+                    SegmentDuration: '10'
+                },
+                {
+                    Key: 'hls_416x234',
+                    PresetId: '1443827226269-j3hjhq',
+                    SegmentDuration: '10'
+                },
+                {
+                    Key: 'hls_480x270',
+                    PresetId: '1443827374277-xgzzdw',
+                    SegmentDuration: '10'
+                },
+                {
+                    Key: 'hls_640x360',
+                    PresetId: '1443827437245-ehtlmv',
+                    SegmentDuration: '10'
+                },
+                {
+                    Key: 'hls_960x540',
+                    PresetId: '1443827588644-f4me52',
+                    SegmentDuration: '10'
+                },
+                {
+                    Key: 'hls_1280x720',
+                    PresetId: '1443827656419-079ewh',
+                    SegmentDuration: '10'
+                },
+                {
+                    Key: 'hls_1920x1080',
+                    PresetId: '1443827724492-vvdyuf',
+                    SegmentDuration: '10'
+                },
+            ],
+            Playlists: [
+                {
+                    Format: 'HLSv3',
+                    Name: 'master',
+                    OutputKeys: ["hls_768x432", "hls_416x234", "hls_480x270", "hls_640x360", "hls_960x540", "hls_1280x720", "hls_1920x1080"],
                 }
             ]
         };
@@ -32,3 +71,8 @@ exports.handler = function(event, context) {
         });
     });
 };
+
+
+
+
+
