@@ -8,7 +8,7 @@ exports.handler = function(event, context) {
     files.forEach(function(file){
         var params = {
             Input: {
-                Key: file['input-name'],
+                Key: file['relative-path'],
             },
             PipelineId: '1439822635276-rcaxp4',
             OutputKeyPrefix: 'test-29/test_',
