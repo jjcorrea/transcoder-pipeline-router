@@ -9,7 +9,7 @@ exports.handler = function(event, context) {
         Input: {
             Key: file,
         },
-        PipelineId: event.pipelineId || '1450444750278-tw7e41',
+        PipelineId: '1439822635276-rcaxp4',
         OutputKeyPrefix: 'core-media/hlsv3/' +  basename(file) + "/",
         Outputs: [
             {
@@ -71,8 +71,3 @@ exports.handler = function(event, context) {
 function basename(path) {
     return path.split('/').reverse()[0].split('.')[0];
 }
-
-
-
-
-
